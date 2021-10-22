@@ -9,7 +9,14 @@
 
 :root{
     --body-color:#efefef;
+    --nav-color: #1876f2;
+    --bg-color:#fff;
 
+}
+.dark-theme{
+    --body-color:#0a0a0a;
+    --nav-color:#000;
+    --bg-color:#000;
 }
 
 
@@ -17,13 +24,14 @@
 body {
     
     background:var(--body-color);
+    transition:  background 0.3s;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f1;
+    background: var(--nav-color);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -93,7 +101,7 @@ nav {
     content: '';
     width: 7px;
     height: 7px;
-    border: 2px solid #fff;
+    border: 2px solid var(--bg-color);
     border-radius: 50%;
     background: #41db51;
     position: absolute;
@@ -121,7 +129,7 @@ nav {
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 20px;
     color: #626262d3;
@@ -226,7 +234,7 @@ nav {
     left: 0;
     width: 100%;
     background: #1876f2;
-    color: #fff;
+    color: var(--bg-color);
     font-size: 10px;
     padding: 5px 0;
 }
@@ -281,7 +289,7 @@ nav {
     bottom: 10px;
     width: 100%; 
     text-align: center;
-    color: #fff;
+    color: var(--bg-color);
     font-size: 14px;
 }
 .story .post-user-img{
@@ -308,7 +316,7 @@ nav {
 .write-post-container{
     width: 100%;
     /* background:rgba(122, 122, 122, 0.1); */
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 20px;
     padding: 20px;
     color: #626262;
@@ -341,6 +349,7 @@ nav {
     outline: 0;
     border-bottom: 1px solid #ccc;
     resize:none;
+    background: transparent;
 }
 .add-post-links{
     display: flex;
@@ -363,7 +372,7 @@ nav {
 }
 .post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 20px;
     padding: 20px;
     color: #626262;
@@ -427,7 +436,7 @@ footer{
     position: absolute;
     width: 90%;
     max-width: 300px;
-    background: #fff;
+    background: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     overflow: hidden;
@@ -498,7 +507,7 @@ footer{
 }
 #dark-btn.dark-btn-on{
     padding-left: 23px;
-    background: #000;
+    background: #414040;
 }
 
 
