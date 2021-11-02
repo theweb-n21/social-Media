@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social Media</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/54d35368fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"><img src="../images/logo.png" class="logo"></a>
+            <ul>
+                <li><img src="../images/notification.png" </li> <li><img src="../images/inbox.png"></li>
+                <li><img src="../images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="../images/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="../images/sunny.jpg">
+            </div>
+
+        </div>
+        <!-- ------------settings-menu--------------- -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="../images/sunny.jpg">
+                    <div>
+                        <p>MD.Nazmul islam</p>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="../images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-link">
+                    <img src="../images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="../images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-link">
+                    <img src="../images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="../images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-link">
+                    <img src="../images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="../images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-link">
+                    <img src="../images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="../images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="cover-photo-container">
+        <div class="cover-photo">
+            <img src="../images/sunny.jpg" alt="">
+            <button> <i class="fas fa-camera"></i> Edit Cover Photo</button>
+        </div>
+
+        <div class="profile-name">
+            <h1>Nuzmul Ahamad Sunny Durrany <span>(sunny)</span></h1><br>
+            <a href="#">Add Bio</a>
+        </div>
+
+    </section>
+    <section class="profile-menu-container">
+        <div class="profile-menu">
+            <div class="profile-menu-link">
+                <a href="#">Posts</a>
+                <a href="#">About</a>
+                <a href="#">Friends</a>
+                <a href="#">Photos</a>
+                <a href="#">Story Archive</a>
+                <a href="#">More <i class="fas fa-sort-down"></i></a>
+            </div>
+            <div class="profile-menu-btn">
+                <button class="first-btn"><i class="fas fa-plus-circle"></i> Add to story</button>
+                <button><i class="fas fa-pen"></i> Edit Profile</button>
+                <button><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <!-- -----left-side-profile-bar-------- -->
+        <div class="left-side-profile-bar">
+            <div class="intro">
+                <h1>Intro</h1>
+                <h4><i class="fas fa-heart"></i> Single</h4>
+                <h4><i class="fas fa-clock"></i> Joined July 2013</h4>
+                <h4><i class="fas fa-wifi"></i> Followed by 202 people</h4>
+                <button>Edit Details</button>
+                <button>Add Hobbies</button>
+                <button>Add Featured</button>
+            </div>
+        </div>
+
+        <!------- right-side-profile-bar------- -->
+
+        <div class="right-side-profile-bar">
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="../images/sunny.jpg">
+                    <div>
+                        <p>MD.Nazmul islam</p>
+                        <small>public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="../images/live-video.png">Live Video</a>
+                        <a href="#"><img src="../images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="../images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="../images/Abu Usuf.jpg">
+                        <div>
+                            <p>Abu Usuf</p>
+                            <span>June 24 2021, 13:15 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i>
+                    </a>
+
+                </div>
+
+
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti itaque deleniti
+                    similique? Vel quas .</p>
+                <img src="../images/Abu Usuf.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="../images/like-blue.png" alt="">120</div>
+                        <div><img src="../images/comments.png" alt="">50</div>
+                        <div><img src="../images/share.png" alt="">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/sunny.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>Copyright 2021 - The web.n / Developers</p>
+    </footer>
+
+    <script src="../javascript/app.js"></script>
+</body>
+
+</html>
